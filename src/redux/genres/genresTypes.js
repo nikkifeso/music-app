@@ -1,0 +1,4 @@
+export const GENRES_START = "GENRES_START";
+export const GENRES_SUCCESSFUL = "GENRES_SUCCESSFUL";
+export const GENRES_FAILED = "GENRES_FAILED";
+export const GENRES_END = "GENRES_END";
