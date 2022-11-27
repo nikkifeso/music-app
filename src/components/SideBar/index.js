@@ -1,6 +1,6 @@
 import React from 'react';
-import {ContainerDiv, AvatarImg, IconDiv} from './style'; 
-import {FaHeadphonesAlt, FaSearch, FaHeart, FaPlayCircle, FaStream} from 'react-icons/fa';
+import { ContainerDiv, AvatarImg, IconDiv } from './style'; 
+import { FaHeadphonesAlt, FaSearch, FaHeart, FaPlayCircle, FaStream } from 'react-icons/fa';
 import { ReactComponent as Avatar } from '../../assets/images/avatar.svg'
 
 
@@ -13,7 +13,6 @@ const SideBar =()=>{
                 <div className='username'>
                     <span>Bob Smith</span>
                 </div>
-                
             </AvatarImg>
             <IconDiv>
                 <FaHeadphonesAlt/>

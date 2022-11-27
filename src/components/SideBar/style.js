@@ -11,7 +11,6 @@ export const AvatarImg = styled.div`
     flex-direction: column;
     align-items: center;
     position: relative;     
-      
     .username{
         margin-top: 120px;
         margin-bottom: 20px;
@@ -20,8 +19,7 @@ export const AvatarImg = styled.div`
         position: absolute;
         width: 60px;
         height: 100px;
-        margin-top: 25px;
-        
+        margin-top: 25px;      
     }
     span{   
         color: #ffffff;
@@ -48,22 +46,17 @@ export const IconDiv = styled.div`
     padding-right: 25px;
     color: #aba7ec;
     font-size: 17px;
-
     span{  
         margin-left: 15px; 
 
     };
-
     &:hover{
         background-image: linear-gradient(to right, #7671DC, #574FD8);
         color: #ffffff;
     }  
-
     @media (max-width: 480px) {
     span{
             display: none;
         }
-    }
-
-    
+    }  
 `

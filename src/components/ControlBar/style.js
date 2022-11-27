@@ -53,7 +53,8 @@ export const Container = styled.div`
         background-color: #574fd8;
         border-radius: 50% ;
     }
-     audio::-webkit-media-controls-panel {
+    
+    audio::-webkit-media-controls-panel {
         background-color: rgba(255, 255, 255, 2.0);
   
      }

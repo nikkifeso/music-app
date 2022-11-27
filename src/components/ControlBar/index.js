@@ -1,11 +1,10 @@
 import React from "react";
-import {Container} from './style';
-import {useSelector}  from 'react-redux';
+import { Container } from './style';
+import { useSelector }  from 'react-redux';
 
 
 const ControlBar=()=>{
     const {song}= useSelector(state=> state.nowPlayingReducer)
-    console.log(song);
     return(
         <>
             <Container>
