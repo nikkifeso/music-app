@@ -1,7 +1,7 @@
 import React from 'react';
-import {HeaderImg} from './style';
+import { HeaderImg } from './style';
 import { ReactComponent as Hero } from '../../assets/images/hero.svg';
-import {FaSun, FaMoon} from 'react-icons/fa';
+import { FaSun, FaMoon } from 'react-icons/fa';
 
 const Header =()=>{
     return(      

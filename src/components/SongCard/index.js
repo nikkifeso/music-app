@@ -7,13 +7,11 @@ import { currentlyPlaying } from "../../redux/nowPlaying/nowPlayingActions";
 
 const SongCard =({image,title,preview,song})=>{
     const dispatch = useDispatch();
-
-    const handleClick=(song)=>{
-        console.log(song) 
+    const handleClick=()=>{
         dispatch(currentlyPlaying(song)) ; 
     }
     return(
-           <Container onClick={()=>handleClick(song)}>
+           <Container onClick={()=>handleClick()}>
                <img src={image} alt=""/>
                <span>{title}</span>
            </Container> 

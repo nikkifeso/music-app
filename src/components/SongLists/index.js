@@ -1,45 +1,39 @@
 import React from "react";
-import {ListContainer, Container, DivStyle} from './style';
+import { ListContainer, Container, DivStyle } from './style';
 import SongCard from '../SongCard';
-import {FaAngleLeft, FaAngleRight} from 'react-icons/fa';
+import { FaAngleLeft, FaAngleRight } from 'react-icons/fa';
 
-import {releasedAction} from '../../redux/released/releasedAction';
-import {genresAction} from '../../redux/genres/genresAction';
-import {featuredAction} from '../../redux/featured/featuredAction';
-import { useDispatch, useSelector}  from 'react-redux';
-import { useState, useEffect } from 'react';
+import { releasedAction } from '../../redux/released/releasedAction';
+import { genresAction } from '../../redux/genres/genresAction';
+import { featuredAction } from '../../redux/featured/featuredAction';
+import { useDispatch, useSelector }  from 'react-redux';
+import { useEffect } from 'react';
 
-const SongLists =()=>{
-    
-    const {releasedReducer}= useSelector(state=> state)
-    const {genresReducer}= useSelector(state=> state)
-    const {featuredReducer}= useSelector(state=> state)
+const SongLists =()=>{ 
     const dispatch = useDispatch();
+    const { releasedReducer } = useSelector(state=> state)
+    const { genresReducer } = useSelector(state=> state)
+    const { featuredReducer } = useSelector(state=> state)
 
     const SongData = releasedReducer?.releasedData?.data?.tracks?.data;
-    useEffect(()=>{
-        dispatch(releasedAction())
-    },[dispatch])
-
     const GenresData = genresReducer?.genresData?.data?.tracks?.data;
-    useEffect(()=>{
-        dispatch(genresAction())
-    },[dispatch])
-
     const FeaturedData = featuredReducer?.featuredData?.data?.tracks?.data;
-    useEffect(()=>{
-        dispatch(featuredAction())
-    },[dispatch])
 
-
-
-  
+      
     const handleNext= () => {
         
     }
     const handlePrev= () => {
         
     }
+    
+    useEffect(()=>{
+        dispatch(releasedAction())
+        dispatch(genresAction())
+        dispatch(featuredAction())
+    },[dispatch])
+
+
      
     return (
         <>

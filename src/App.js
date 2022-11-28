@@ -1,11 +1,11 @@
 import React from 'react';
-import Discover from './pages/discover'
+import Discover from './pages/discover';
 
 function App() {
   return (
     <div className="App">
       <header className="App-header">
-        <Discover></Discover>
+        <Discover/>
       </header>
     </div>
   );
